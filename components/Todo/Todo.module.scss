@@ -1,0 +1,9 @@
+.todo {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_complete {
+    text-decoration: line-through;
+  }
+}
