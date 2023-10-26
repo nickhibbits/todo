@@ -1,24 +1,29 @@
 @use "@/styles/variables";
 
 .main {
-  // border: solid 2px red;
   height: 97dvh;
+  margin: 0;
 
   &_wrapper {
     gap: 1rem;
     border: solid 2px green;
-    border-radius: 15px;
+    border-radius: variables.$br-1;
     padding: 2rem;
     width: 50%;
   }
 
   &_input_wrapper {
     gap: 0.25rem;
-    color: rgba(variables.$font-color, 0.5);
+
+    .label {
+      color: rgba(variables.$font-color, 0.5);
+    }
   }
 
-  // .section {
-  // }
+  .button_wrapper {
+    margin-top: 0.5rem;
+    justify-content: space-between;
+  }
 
   @media (min-width: 850px) {
     margin: 0rem 8rem;

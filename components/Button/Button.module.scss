@@ -1,0 +1,18 @@
+@use "@/styles/variables.scss";
+
+.button {
+  padding: 0.2rem;
+  width: min(50%, 10rem);
+  border-radius: variables.$br-1;
+  color: rgba(variables.$font-color, 0.8);
+  border: solid 2px rgba(variables.$font-color, 0.3);
+  background-color: rgba(#000000, 0);
+
+  &_clicked {
+    background-color: green;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
