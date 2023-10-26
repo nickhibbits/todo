@@ -1,4 +1,4 @@
-@use "globals.scss";
+@use "@/styles/variables";
 
 .main {
   // border: solid 2px red;
@@ -14,7 +14,7 @@
 
   &_input_wrapper {
     gap: 0.25rem;
-    color: rgba(globals.$font-color, 0.5);
+    color: rgba(variables.$font-color, 0.5);
   }
 
   // .section {
