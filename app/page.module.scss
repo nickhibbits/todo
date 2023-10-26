@@ -1,0 +1,26 @@
+@use "globals.scss";
+
+.main {
+  // border: solid 2px red;
+  height: 97dvh;
+
+  &_wrapper {
+    gap: 1rem;
+    border: solid 2px green;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 50%;
+  }
+
+  &_input_wrapper {
+    gap: 0.25rem;
+    color: rgba(globals.$font-color, 0.5);
+  }
+
+  // .section {
+  // }
+
+  @media (min-width: 850px) {
+    margin: 0rem 8rem;
+  }
+}

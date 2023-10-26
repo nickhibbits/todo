@@ -1,0 +1,19 @@
+$font-color: rgb(223, 223, 223);
+
+.body {
+  background-color: rgb(23, 23, 23);
+  color: $font-color;
+}
+
+.flex {
+  display: flex;
+
+  &_column {
+    flex-direction: column;
+  }
+
+  &_center {
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -3,10 +3,16 @@ import Todo from "@/components/Todo/Todo";
 
 export default function Home() {
   return (
-    <main>
-      <section className={styles.section}></section>
-      <Todo text={"walk dog"} />
-      <input type="text" className={styles.todo_input} />
+    <main className={`flex flex_center ${styles.main}`}>
+      <div className={`flex flex_column ${styles.main_wrapper}`}>
+        <section className={styles.section}>
+          <Todo text={"walk dog"} />
+        </section>
+        <div className={`flex flex_column ${styles.main_input_wrapper}`}>
+          <label htmlFor="todo_input">Add todo</label>
+          <input type="text" id="todo_input" className={styles.todo_input} />
+        </div>
+      </div>
     </main>
   );
 }
