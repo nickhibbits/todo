@@ -8,8 +8,8 @@ type TodosChildren = {
 function Todos({ items }: TodosChildren) {
   return (
     <div>
-      {items.map((item) => {
-        return <Todo text={item} />;
+      {items.map((item, i) => {
+        return <Todo text={item} key={i} />;
       })}
     </div>
   );
