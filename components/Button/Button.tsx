@@ -7,7 +7,7 @@ type ButtonChildren = {
 
 function Button({ text, action }: ButtonChildren) {
   return (
-    <button className={styles.button} onClick={() => action()}>
+    <button className={styles.button} onClick={action}>
       {text}
     </button>
   );
